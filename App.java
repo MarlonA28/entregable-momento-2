@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
 
-   
         Scanner sc = new Scanner(System.in);
 
         int cantidadProductos;
@@ -21,7 +20,6 @@ public class App {
         cantidadProductos = sc.nextInt();
         sc.nextLine();
 
-        
         while (contador <= cantidadProductos) {
 
             System.out.println("\nProducto número " + contador);
@@ -33,7 +31,6 @@ public class App {
             costoProducto = sc.nextDouble();
             sc.nextLine();
 
-            
             if (costoProducto < 10000) {
 
                 System.out.println("Categoría Baja");
@@ -48,13 +45,12 @@ public class App {
                 cantidadCategoriaAlta++;
             }
 
-            
             totalCostos = totalCostos + costoProducto;
 
-            
             contador++;
         }
-  
+
+        sc.close();
     }
 }
 
